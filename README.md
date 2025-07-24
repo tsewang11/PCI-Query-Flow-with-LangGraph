@@ -21,14 +21,30 @@ An AI-powered chatbot built with **LangGraph**, **LangChain**, and **Mistral (vi
 
 ```
 pci-query-flow/
+├── .streamlit/
+│   └── config.toml
 ├── app/
-│   ├── workflow.py          # LangGraph workflow
-│   ├── segmentation.py      # Simple customer segmentation logic
-│   ├── memory.py            # LangChain memory config
+│   ├── __init__.py
+│   ├── memory.py
+│   ├── segmentation.py
+│   ├── suggestion.py
+│   └── workflow.py
+├── diagrams/
+│   └── workflow_diagram.png
 ├── ui/
-│   └── streamlit_app.py     # Chat UI using Streamlit
-├── main.py                  # (Optional) FastAPI endpoint
+│   └── streamlit_app.py
+├── venv/
+│   └── ... (virtual environment files)
+├── main.py
+├── README.md
+└── requirements.txt
 ```
+
+---
+
+## 🧭 Architecture Diagram
+
+![Workflow Diagram](diagrams/workflow_diagram.png)
 
 ---
 
